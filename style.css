@@ -1,0 +1,76 @@
+body{
+	background-color: #cccccc;
+}
+.chessDesk{
+	margin-left: 50%;
+	left:-260px;
+	width: 520px;
+	height:520px;
+	position:relative;
+	border-radius: 5px;
+	border-color:#9b7247;
+	font-family: helvetica, sans-serif;
+	color: #2B2219;
+	background-color:#fff;
+	border:1px solid #CBCCC8;
+	box-shadow: 2px 2px 5px #888888;
+	text-align:center;
+}
+.chessCell{
+	width:65px;
+	height:65px;
+	padding:0 0 0 0;
+	margin:0 0 0 0;
+	display:inline-block;
+}
+.contain{
+	padding:0 0 0 0;
+	margin:0 0 0 0;
+	width: 520px;
+	height:65px;
+}
+.chessDesk .contain:nth-child(2n){
+	background-color:#000;
+}
+
+.chessDesk .contain:nth-child(2n) .chessCell:nth-child(2n){
+	background-color:#fff;
+}
+.chessDesk .contain:nth-child(2n+1) .chessCell:nth-child(2n){
+	background-color:#000;
+}
+.displaySolutions {
+	margin-left: 50%;
+	margin-top: 5%;
+	left:-260px;
+	width: 520px;
+	height:150px;
+	position:relative;
+	font-family: helvetica, sans-serif;
+	text-align:center;
+	}
+.displaySolutions h1 {
+	text-transform:uppercase;
+	}
+.changeSolution {
+	height:75px;
+	width: 520px;
+}
+button {
+	width: 50px;
+	height:50px;
+	display: inline-block;
+	font-size:25px;
+	font-weight:bold;
+	}
+#solutionText {
+	
+	height:50px;
+	width: 320px;
+	display: inline-block;
+	font-size:25px;
+	vertical-align:-3px;
+}
+.hasQueen{
+background-image:url('queen.gif');
+}
